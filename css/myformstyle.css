@@ -59,3 +59,6 @@ li a[href $= "pdf"] {
     background: url("../images/pdf.png") no-repeat right center ;
     padding-right: 35px;
 }
+fieldset:last-child {
+    border: none;
+}
