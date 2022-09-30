@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포토카드 만들어 보자</title>
+    <style>
+        #container {
+            width: 900px;
+            margin: 50px auto;
+        }/*
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }*/
+        .card {
+            width: 200px;
+            height:300px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            background-color: #fff;
+            padding: 20px;
+            margin-left: -150px;
+            box-shadow: 2px 2px 5px #aaa;
+            float: left;
+            transition: all 0.5s;
+        }
+        .card:hover + .card {
+            margin-left: 0px;
+        }
+        @keyframes dispFront {
+            from {margin-left: 0px;}
+            to {margin-left: -150px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="card">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, asperiores!</p>
+        </div>
+        <div class="card">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, asperiores!</p>
+        </div>
+        <div class="card">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, asperiores!</p>
+        </div>
+        <div class="card">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, asperiores!</p>
+        </div>
+    </div>
+</body>
+</html>
