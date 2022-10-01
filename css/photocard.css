@@ -1,0 +1,43 @@
+#container {
+    width: 900px;
+    margin: 50px 200px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    width: 200px;
+    height:300px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 20px;
+    margin-left: -150px;
+    box-shadow: 2px 2px 5px #aaa;
+    float: left;
+    transition: all 0.5s;
+    overflow: hidden;
+    background: no-repeat;
+    background-size: cover;
+}
+#c1 {    background-image: url(../images/bear.jpg);}
+#c2 {    background-image: url(../images/cat.jpg);}
+#c3 {    background-image: url(../images/sunset.jpg);}
+#c4 {    background-image: url(../images/prod1.jpg);}
+
+p {
+    color: antiquewhite;
+    text-align: center;
+    line-height: 30px;
+    offset-position:calc(10%-20px);
+}
+.card:hover + .card {
+    margin-left: 0px;
+}
+@keyframes dispFront {
+    from {margin-left: 0px;}
+    to {margin-left: -150px;}
+}

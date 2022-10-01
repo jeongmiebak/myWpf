@@ -5,66 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>포토카드 만들어 보자</title>
-    <style>
-        #container {
-            width: 900px;
-            margin: 50px auto;
-        }/*
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }*/
-        .card {
-            width: 200px;
-            height:300px;
-            border: 1px solid #ccc;
-            border-radius: 15px;
-            background-color: #fff;
-            padding: 20px;
-            margin-left: -150px;
-            box-shadow: 2px 2px 5px #aaa;
-            float: left;
-            transition: all 0.5s;
-            overflow: hidden;
-            background: no-repeat;
-            background-size: cover;
-        }
-        #c1 {
-            background-image: url(images/bear.jpg);
-        }
-        #c2 {
-            background-image: url(images/cat.jpg);
-        }
-        #c3 {
-            background-image: url(images/sunset.jpg);
-        }
-        #c4 {
-            background-image: url(images/prod1.jpg);
-        }
-        .card:hover + .card {
-            margin-left: 0px;
-        }
-        @keyframes dispFront {
-            from {margin-left: 0px;}
-            to {margin-left: -150px;}
-        }
-    </style>
+    <link rel="stylesheet" href="css/photocard.css">
 </head>
 <body>
     <div id="container">
         <div class="card" id="c1">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, asperiores!</p>
+            <p>울지 마라 <br>외로우니까 사람이다 <br>살아간다는 것은 <br>외로움을 견디는 일이다</p>
         </div>
         <div class="card" id="c2">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, asperiores!</p>
+            <p>꽃이<br> 지는 건 쉬워도 <br>잊는 건 한참이더군 <br>영영 한참이더군</p>
         </div>
         <div class="card" id="c3">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, asperiores!</p>
+            <p>받아들이면 된다<br>지는 해를 깨우려 노력하지 말거라<br>너는 달빛에 더 아름답다</p>
         </div>
         <div class="card" id="c4">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, asperiores!</p>
+            <p>다시 눈이 내리면 <br>생각이 나 주겠지요 <br>오랜 세월에 묻혀 <br>어렴훗해진 얼굴 <br>다시 눈이 내리면 <br>생각이 나 주겠지요</p>
         </div>
     </div>
 </body>
