@@ -15,6 +15,16 @@ html {
     background-color: #eee;
     border: 1px solid #222;
 }
+.mic {
+    background: url('../images/mic.png') right bottom no-repeat #eee;
+    background-size: 200px;
+    z-index: 10;
+}
+h1 {
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
 legend {
     font-size: 16px;
     font-weight: bold;
@@ -33,14 +43,18 @@ input, textarea {
     height: 35px;
     padding: 10px;
     margin: 5px;
-}
+    border: 1px solid #222;}
 textarea {
     height: auto;
 }
+input:active, textarea:active {
+    border: 2px solid #222;
+    border-radius: 5px;
+}
 fieldset {
-    width: 100%;
+    width: 95%;
     padding: 20px 5px;
-    margin: 25px auto;
+    margin: 20px auto;
 }
 button {
     display: inlind-block;
@@ -53,12 +67,15 @@ button {
 }
 li a[href $= "doc"] {
     background: url("../images/word.png") no-repeat right center ;
+    padding-left: 35px;
     padding-right: 35px;
     line-height: 40px;
 }
 li a[href $= "pdf"] {
     background: url("../images/pdf.png") no-repeat right center ;
+    padding-left: 35px;
     padding-right: 35px;
+    line-height: 40px;
 }
 fieldset:last-child {
     border: none;

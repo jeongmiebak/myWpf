@@ -15,11 +15,11 @@
             <ul>
                 <li>
                     <label for="user-grade">회원 등급</label>
-                    <input type="text" readonly value="일반회원" id="user-grade">
+                    <input type="text" readonly value="일반회원" id="user-grade" tabindex="-1">
                 </li>
                 <li>
                     <label for="user-name">이름</label>
-                    <input type="text" required id="user-name">
+                    <input type="text" required id="user-name" autofocus>
                 </li>
                 <li>
                     <label for="user-id">아이디</label>
@@ -47,7 +47,7 @@
                 </li>
             </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="mic">
             <legend>이용 약관 내려받기</legend>
             <ul>
                 <li><a href="#.doc">워드 파일</a> </li>
@@ -61,6 +61,5 @@
             </div>
         </fieldset>
     </form>
-
 </body>
 </html>
