@@ -35,8 +35,9 @@ p {
     text-align: center;
     line-height: 30px;
     position: absolute;
-    top: 30px;
-    width: 300px;
+    top: 320px;
+    width: 200px;
+    height: 300px;
     padding-top: 20px;
     opacity: 0;
     z-index: 10s;
@@ -47,7 +48,7 @@ p {
 }
 #container p:hover {
     opacity: 1;
-    transform: translateY(300px);
+    /* transform: translateY(300px); */
     /* top: 300px; */
 }
 @keyframes dispFront {
