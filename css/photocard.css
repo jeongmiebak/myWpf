@@ -1,6 +1,8 @@
 #container {
     width: 900px;
     margin: 50px 200px;
+    position: relative;
+    transition: all 1s;
 }
 body {
     display: flex;
@@ -18,10 +20,10 @@ body {
     margin-left: -150px;
     box-shadow: 2px 2px 5px #aaa;
     float: left;
-    transition: all 0.5s;
     overflow: hidden;
     background: no-repeat;
     background-size: cover;
+    transition: all 1s;
 }
 #c1 {    background-image: url(../images/bear.jpg);}
 #c2 {    background-image: url(../images/cat.jpg);}
@@ -29,13 +31,24 @@ body {
 #c4 {    background-image: url(../images/prod1.jpg);}
 
 p {
-    color: antiquewhite;
+    color: 222;
     text-align: center;
     line-height: 30px;
-    offset-position:calc(10%-20px);
+    position: absolute;
+    top: 30px;
+    width: 300px;
+    padding-top: 20px;
+    opacity: 0;
+    z-index: 10s;
+    /* offset-position:calc(10%-20px); */
 }
 .card:hover + .card {
     margin-left: 0px;
+}
+#container p:hover {
+    opacity: 1;
+    transform: translateY(300px);
+    /* top: 300px; */
 }
 @keyframes dispFront {
     from {margin-left: 0px;}
