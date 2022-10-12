@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dokdo&family=Noto+Sans+KR:wght@400;700&family=Noto+Serif+KR&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#navibar {
+    display: flex;
+    width: 80%;
+}
+#navibar .logo {
+    width: 100px;
+    height: 90px;
+}
+#navibar .logo img {
+    width: 100%;
+}
+#navibar .menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #222;
+    font-size: 600;
+}
+#banner {
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url(../images/baseballground3.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#navibar {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#banner .heading {
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#banner .heading h2 {
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Dokdo', cursive;
+    color: #fff;
+    font-size: 90px;
+    text-shadow: 2px 1px 1px #222;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+.heading p {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 30px;
+    color: #eee;
+    margin-bottom: 50px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.buttons button {
+    font-size: 20px;
+    padding: 15px 40px;
+    margin: 0 30px;
+    border-radius: 30px;
+/*    background-color: transparent;*/
+    
+}
