@@ -18,6 +18,10 @@ body {
 #navibar .logo img {
     width: 100%;
 }
+#navibar .menu {
+    display: inline-block;
+    margin: 0 10px;
+}
 #navibar .menu a {
     padding: 10px 20px;
     text-decoration: none;
@@ -38,6 +42,25 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+#navibar .menu {
+    position: relative;
+}
+#navibar .menu a {
+    color: #222;
+    font-size: 20px;
+}
+#navibar .menu a::after {
+    content: "";
+    background-color: rgb(129, 111, 6);
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 15%;
+    bottom: -8px;
+}
+#navibar .menu a:hover::after {
+    width: 70%;
+}
 #banner .heading {
     width: 90%;
     margin: 0 auto;
@@ -50,17 +73,19 @@ body {
 #banner .heading h2 {
     font-family: 'Comforter Brush', cursive;
     font-family: 'Dokdo', cursive;
-    color: #fff;
+    color: rgb(184, 172, 5);
     font-size: 90px;
-    text-shadow: 2px 1px 1px #222;
+    text-shadow: 2px 1px 1px #000;
     letter-spacing: 2px;
     margin-bottom: 50px;
 }
 .heading p {
     font-family: 'Noto Serif KR', serif;
     font-size: 30px;
+    font-weight: 600;
     color: #eee;
-    margin-bottom: 50px;
+    line-height: 1.8;
+    margin-bottom: 90px;
 }
 .buttons {
     display: flex;
