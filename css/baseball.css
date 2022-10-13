@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 body {
     font-family: 'Noto Sans KR', sans-serif;
@@ -97,6 +98,60 @@ body {
     padding: 15px 40px;
     margin: 0 30px;
     border-radius: 30px;
-/*    background-color: transparent;*/
+    background-color: transparent;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #eee;
+    position: relative;
+}
+.buttons button a {
+    color: #eee;
+}
+.buttons button span {
+    width: 0;
+    height: 100%;
+    background-color: rgb(129, 111, 6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.buttons button:hover span {
+    width: 100%;
+}
+.buttons button:hover {
+    border: none;
+}
+
+@media screen and (max-width:768px) {
+    #navibar .logo {
+        width: 50px;
+        height: 40px;
+    }
     
+    #navibar .menu a {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+    #banner .heading h2 {
+        font-size: 70px;
+        text-shadow: 1px 1px 1px #000;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+    .heading p {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+    .buttons {
+        display: inline-block;
+        gap: 20px;
+    }
+    .buttons button {
+        font-size: 15px;
+        padding: 10px 20px;
+        margin: 0 10px;
+    }
 }
